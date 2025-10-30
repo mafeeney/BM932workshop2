@@ -1,0 +1,242 @@
+---
+title: "Experimental Workflows"
+subtitle: "BM932 Workshop 2"
+author: 
+  - name: "Morgan Feeney"
+  - name: "Eva Heinz"
+date: "2025-11-04"
+format: 
+  revealjs
+---
+
+## Learning Objectives
+
+After this workshop, you should be able to:
+
+- Identify appropriate experimental techniques that can be applied to solving specific biological questions
+
+- Design experiments including the selection of appropriate controls 
+
+
+
+## Consider how the tools at your disposal can be applied to answering biological questions
+
+- Use appropriate techniques to study a problem/question of interest (understand the technique + its limitations)
+
+- Include appropriate controls
+
+- Biological context, environmental conditions, & experimental set-up **matter**
+
+## What are the tools at your disposal?
+
+- Your brain (think critically)
+
+- The scientific literature (what is already known)
+
+- Toolkit: known and already developed techniques 
+- Data analysis techniques (how are you going to analyse & interpret your results?)
+
+## As an illustration, we will work through an example: 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+We have a novel strain of Escherichia coli that appears to be quite virulent
+
+![](images/Ecoli.jpg)
+:::
+
+::: {.column width="50%"}
+Its genome encodes a protein predicted to be a novel transcription factor, VirA
+
+![](images/2RGY.jpg)
+:::
+
+::::
+
+## <span style="color:#B22222">Hypothesis: VirA regulates virulence gene expression in this *E. coli* strain</span> 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+We have a novel strain of Escherichia coli that appears to be quite virulent
+
+![](images/Ecoli.jpg)
+:::
+
+::: {.column width="50%"}
+Its genome encodes a protein predicted to be a novel transcription factor, VirA
+
+![](images/2RGY.jpg)
+:::
+
+::::
+
+## <span style="color:#B22222">Hypothesis: VirA regulates virulence gene expression in this *E. coli* strain</span> 
+
+How can we test this hypothesis? What experiment(s) would you like to do? ^[assuming unlimited resources and funding]
+
+## Genetics approach – how would you create mutant strain(s) for analysing the role of VirA in your strain? (deletion, overexpression, other mutants?) {#genetics}
+
+- What method would you use? 
+- What controls are necessary?
+- What are the advantages/limitations of this approach?
+
+::: {.notes}
+Caveats/limitations mostly centre around possibility of inadvertently introducing off-target mutations/suppressor mutations/mutations that have polar effects on downstream genes, etc. 
+
+Controls: Complement mutants, include empty vector controls (when complementing or over-expressing); keep in mind the usual caveats for gene dosage, position, the usual concerns. 
+:::
+
+## Biochemistry approach - how would you isolate and purify the VirA protein if you wanted to study it <i>in vitro</i>? {#biochem}
+
+- What method would you use? 
+- What controls are necessary?
+- What are the advantages/limitations of this approach?
+
+::: {.notes}
+Caveats/limitations for biochemical approaches mostly centre around the fact that proteins do not necessarily behave the same way *in vitro* as they do *in vivo*
+
+Specific concerns about purified proteins: did you have to tag it to purify, does the tag affect structure/function, is the protein identical to the protein *in vivo* (are you missing any PTMs, interacting partners, etc.)
+:::
+
+## Some specific questions we might want to answer about VirA function & role in virulence {#home}
+
+[What are the phenotype(s) of a *virA* mutant strain?](#phenotypes)
+
+[What DNA sequences does VirA bind?](#DNAbinding)
+
+[What gene(s) does VirA regulate?](#regulon)
+
+[When and to what extent is VirA expressed in the cell?](#expression)
+
+[What protein(s) does VirA interact with?](#interaction)
+
+[What regulates VirA?](#regulation)
+
+## What are the phenotypes of a <i>virA</i> mutant strain? {#phenotypes}
+
+- What method(s) would you use to study *virA* mutant phenotypes? 
+- What controls are necessary?
+- Can you predict what the results of this experiment might look like, and how would you analyse & interpret the data?
+- What are the advantages/limitations of this approach?
+- <span style="font-size:0.8em;">For any experiments involving animals, what is required in terms of ethics?</span>
+
+::: aside
+[Choose another experiment](#home)
+:::
+
+::: {.notes}
+Can discuss infection assays and model systems here, but plenty of other potentially interesting phenotypes to discuss here, e.g.:
+
+- biofilm formation assay
+- effector protein secretion/virulence protein production
+- motility, quorum sensing, other virulence-related phenotypes
+:::
+
+## What DNA sequences does VirA bind? {#DNAbinding}
+
+- What method would you use to determine what DNA sequences VirA binds to? 
+- What controls are necessary?
+- Can you predict what the results of this experiment might look like, and how would you analyse & interpret the data?
+- What are the advantages/limitations of this approach?
+
+::: aside
+[Choose another experiment](#home)
+:::
+
+::: {.notes}
+Methods here could include:
+
+- EMSA
+- ChIP-seq or ChIP-exo
+- DNA footprinting
+
+Consider the advantages/limitations of each (e.g., does *in vitro* binding relate to what happens *in vivo*?)
+
+Consider, does DNA binding involve a small molecule or contact with other proteins? How would you go about experimentally identifying a VirA ligand?
+:::
+
+## What gene(s) does VirA regulate? {#regulon}
+
+- What method would you use to identify the VirA regulon? 
+- What controls are necessary?
+- Can you predict what the results of this experiment might look like, and how would you analyse & interpret the data?
+- What are the advantages/limitations of this approach?
+
+::: aside
+[Choose another experiment](#home)
+:::
+
+::: {.notes}
+Methods here might include:
+
+- RNA-seq, microarray, or other way of assaying levels of potential target genes, e.g. in wild-type vs *virA* mutant strains (remember to complement the mutant strain)
+- bioinformatic approaches to identify candidate VirA binding sites (based on previous knowledge of where it binds)
+- If defining a regulon, remember caveats such as the effects of medium and environmental conditions on what is actually being transcribed in the cell; e.g., if assaying in LB, might not observe much if VirA regulon not normally expressed under those conditions (remember, for *in vivo* experiments with animals - ethics!)
+:::
+
+## When and to what extent is VirA expressed in the cell? {#expression}
+
+- What method would you use to measure expression of VirA?
+- What controls are necessary?
+- Can you predict what the results of this experiment might look like, and how would you analyse & interpret the data?
+- What are the advantages/limitations of this approach?
+
+::: aside
+[Choose another experiment](#home)
+:::
+
+::: {.notes}
+Methods here might include:
+
+- looking at mRNA levels (Northern, q-RT-PCR, microarray, RNA-seq)
+- looking at protein levels (Western blot or similar)
+- using reporter genes (transcriptional or translational)
+- If looking at expression remember caveats such as the effects of medium and environmental conditions; e.g., if assaying in LB, might not observe much if VirA not normally expressed under those conditions (remember, for *in vivo* experiments with animals - ethics!)
+:::
+
+
+## What protein(s) does VirA interact with? {#interaction}
+
+- How would you identify/validate potential VirA-interacting proteins?
+- What controls are necessary?
+- Can you predict what the results of this experiment might look like, and how would you analyse & interpret the data?
+- What are the advantages/limitations of this approach?
+
+::: aside
+[Choose another experiment](#home)
+:::
+
+::: {.notes}
+Methods here might include:
+
+- co-IP, BACTH, various biophysical assays...
+- keep in mind that each has limitations & would normally expect to see multiple lines of evidence to confirm protein-protein interactions...
+:::
+
+## What regulates VirA? {#regulation}
+
+- How would you identify/validate potential regulators of VirA?
+- What controls are necessary?
+- Can you predict what the results of this experiment might look like, and how would you analyse & interpret the data?
+- What are the advantages/limitations of this approach?
+
+::: aside
+[Choose another experiment](#home)
+:::
+
+::: {.notes}
+Methods here might include:
+
+- screen for regulators using a reporter (e.g., beta-galactosidase) and a Tn library (will never isolate mutants in essential genes, amongst other caveats)
+- candidate-based approach (look at VirA expression in known mutant strains)
+- identify small molecules or proteins that bind VirA (how?)
+:::
+
+# Challenge
+
+Imagine that the BBSRC have given you 2 million pounds over the next 3 years to study the role of VirA in virulence in this new *E. coli*  strain. 
+
+What experiments would you prioritise? Can you make a flow chart and/or Gantt chart illustrating what you would do?
+
