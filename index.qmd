@@ -6,8 +6,14 @@ author:
   - name: "Eva Heinz"
 date: "2025-11-04"
 format: 
-  revealjs
-  
+  revealjs:
+    slide-number: true
+    controls: true
+    preview-links: auto    
+    footer: "BM327 microbiology workshop 2"
+    width: 1280
+    height: 720
+    self-contained: true
 ---
 
 ## Learning Objectives
